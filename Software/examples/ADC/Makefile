@@ -21,8 +21,7 @@ CC         = sdcc
 OBJCOPY    = objcopy
 PACK_HEX   = packihx
 
-# if linux use python3, if windows use python
-WCHISP    ?= python prog/uploader.py
+
 
 # Compiler Flags
 CFLAGS  = -mmcs51 --model-small --no-xinit-opt
@@ -38,7 +37,6 @@ help:
 	@echo "make all     compile, build, and keep all files"
 	@echo "make hex     compile and build $(TARGET).hex"
 	@echo "make bin     compile and build $(TARGET).bin"
-	@echo "make flash   compile, build, and upload $(TARGET).bin to the device"
 	@echo "make clean   remove all build files"
 
 %.rel : %.c
@@ -57,9 +55,7 @@ $(TARGET).bin: $(TARGET).ihx
 	@echo "Building $(TARGET).bin ..."
 	@$(OBJCOPY) -I ihex -O binary $(TARGET).ihx $(TARGET).bin
 	
-flash: $(TARGET).bin size removetemp
-	@echo "Uploading to CH55x ..."
-	@$(WCHISP) $(TARGET).bin
+
 
 all: $(TARGET).bin $(TARGET).hex size
 
