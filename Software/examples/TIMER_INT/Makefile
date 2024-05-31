@@ -1,6 +1,10 @@
 # ===================================================================================
-# Project:  OLED_I2C
-# Author:  CésarBautista
+# Project:  Original author
+# Author:   Stefan Wagner
+# Year:     2023
+# URL:      https://github.com/wagiminator
+# ===================================================================================
+# version modified by CésarBautista
 # Year:     2023
 # ===================================================================================         
 # Type "make help" in the command line.
@@ -11,7 +15,7 @@ TARGET     = $(basename $(SKETCH))
 INCLUDE    = src
 
 # Microcontroller Settings
-FREQ_SYS   = 24000000
+FREQ_SYS   = 16000000
 XRAM_LOC   = 0x0100
 XRAM_SIZE  = 0x0300
 CODE_SIZE  = 0x3800
@@ -20,7 +24,8 @@ CODE_SIZE  = 0x3800
 CC         = sdcc
 OBJCOPY    = objcopy
 PACK_HEX   = packihx
-WCHISP    ?= python3 tools/chprog.py
+
+
 
 # Compiler Flags
 CFLAGS  = -mmcs51 --model-small --no-xinit-opt
@@ -36,7 +41,6 @@ help:
 	@echo "make all     compile, build, and keep all files"
 	@echo "make hex     compile and build $(TARGET).hex"
 	@echo "make bin     compile and build $(TARGET).bin"
-	@echo "make flash   compile, build, and upload $(TARGET).bin to the device"
 	@echo "make clean   remove all build files"
 
 %.rel : %.c
@@ -55,9 +59,7 @@ $(TARGET).bin: $(TARGET).ihx
 	@echo "Building $(TARGET).bin ..."
 	@$(OBJCOPY) -I ihex -O binary $(TARGET).ihx $(TARGET).bin
 	
-flash: $(TARGET).bin size removetemp
-	@echo "Uploading to CH55x ..."
-	@$(WCHISP) $(TARGET).bin
+
 
 all: $(TARGET).bin $(TARGET).hex size
 

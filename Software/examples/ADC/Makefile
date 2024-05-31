@@ -1,6 +1,10 @@
 # ===================================================================================
-# Project:  Examples for CH55x
-# Author:   CésarBautista
+# Project:  Original author
+# Author:   Stefan Wagner
+# Year:     2023
+# URL:      https://github.com/wagiminator
+# ===================================================================================
+# version modified by CésarBautista
 # Year:     2023
 # ===================================================================================         
 # Type "make help" in the command line.
