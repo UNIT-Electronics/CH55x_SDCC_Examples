@@ -1,4 +1,4 @@
-# CH552 Examples in C
+# Cocket Nova CH552 Examples using SDCC
 
 [![Version 1.1](https://img.shields.io/badge/Version-1.1-blueviolet?style=flat-square)](https://example.com/download/ch552-examples-v1.1)
 
@@ -9,6 +9,11 @@ The CH552 microcontroller features an enhanced E8051 core MCU compatible with th
 The examples cover various functionalities including Blink, ADC, PWM, Timer, Interrupts, and bit-banging for I2C communication and controlling WS2812 LEDs.
 
 **Note:** The examples are regularly updated to enhance project development.
+
+
+## Upload firmware to the Cocket Nova CH552 using Loadupch tool. 
+
+[Documentation](https://github.com/UNIT-Electronics/ue_loadupch_Loader_Firmware-/blob/main/pdf/latex/loadupch.pdf)
 
 ## Acknowledgements and Credits
 
