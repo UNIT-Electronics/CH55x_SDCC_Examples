@@ -1,6 +1,10 @@
 # Cocket Nova CH552 Examples using SDCC
 
+<div align="center">
+
 [![Version 1.1](https://img.shields.io/badge/Version-1.1-blueviolet?style=flat-square)](https://example.com/download/ch552-examples-v1.1)
+
+</div>
 
 This repository provides examples for developing software in C using the SDCC compiler for the CH552 microcontroller. It serves as an excellent resource for beginners and experienced developers alike, offering versatile and affordable solutions for CH552 development.
 
