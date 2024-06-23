@@ -48,7 +48,7 @@ Create a new udev rule file:
 Add the following rule to the file (replace idVendor and idProduct with your device's actual IDs):
 
 ```bash
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="27dd", GROUP="dialout", MODE="0666"
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="27dd", GROUP="dialout", MODE="0666"
 ```
 
 Save the file (Ctrl + O in nano, then Enter) and exit nano (Ctrl + X).
@@ -58,7 +58,7 @@ Reload udev rules for changes to take effect:
 ```bash
     sudo udevadm control --reload-rules
 ```
-Example Commands for Serial Communication
+### Example Commands for Serial Communication
 
 Send data to USB device:
 
