@@ -42,13 +42,13 @@ To configure permissions for USB CDC devices (/dev/ttyACM0), follow these steps:
 Create a new udev rule file:
 
 ```bash
-    sudo nano /etc/udev/rules.d/99-custom-usb.rules
+sudo nano /etc/udev/rules.d/99-custom-usb.rules
 ```
 
 Add the following rule to the file (replace idVendor and idProduct with your device's actual IDs):
 
 ```bash
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="27dd", GROUP="dialout", MODE="0666"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="27dd", GROUP="dialout", MODE="0666"
 ```
 
 Save the file (Ctrl + O in nano, then Enter) and exit nano (Ctrl + X).
@@ -56,20 +56,20 @@ Save the file (Ctrl + O in nano, then Enter) and exit nano (Ctrl + X).
 Reload udev rules for changes to take effect:
 
 ```bash
-    sudo udevadm control --reload-rules
+sudo udevadm control --reload-rules
 ```
 ### Example Commands for Serial Communication
 
 Send data to USB device:
 
 ```bash
-    echo -e 'Hello World!\n' > /dev/ttyACM0
+echo -e 'Hello World!\n' > /dev/ttyACM0
 ```
 
 Read data from USB device:
 
 ```bash
-    cat /dev/ttyACM0
+cat /dev/ttyACM0
 ```
 These commands allow you to interact with USB CDC devices connected to your Linux system. Adjust the device path (/dev/ttyACM0) as per your setup.
 
