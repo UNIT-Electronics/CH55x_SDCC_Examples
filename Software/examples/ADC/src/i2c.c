@@ -16,7 +16,7 @@
 
 #include "i2c.h"
 #include "gpio.h"
-#include "config.h"
+#include "../config.h"
 
 // I2C delay (for 400kHz devices -> SCL low: min 1300us, SCL high: min 600us)
 // The exact number of clock cycles required for jumps and thus also loops cannot 
