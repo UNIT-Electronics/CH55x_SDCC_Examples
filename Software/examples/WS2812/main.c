@@ -30,7 +30,7 @@
 
 
 #define delay 100
-#define NeoPixel 16 // Number Neopixel conect
+#define NeoPixel 2 // Number Neopixel conect
 #define level 100 // Ilumination level 0 to 255
 
 void randomColorSequence(void) {
@@ -82,8 +82,8 @@ void main(void) {
   // Loop
   while (1) {
     randomColorSequence();
-    DLY_ms(100);
+    DLY_ms(10);
     colorSequence();
-    DLY_ms(100);
+    DLY_ms(10);
   }
 }
