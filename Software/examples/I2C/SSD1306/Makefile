@@ -15,7 +15,7 @@ TARGET     = $(basename $(SKETCH))
 INCLUDE    = src
 
 # Microcontroller Settings
-FREQ_SYS   = 16000000
+FREQ_SYS   = 24000000
 XRAM_LOC   = 0x0100
 XRAM_SIZE  = 0x0300
 CODE_SIZE  = 0x3800
