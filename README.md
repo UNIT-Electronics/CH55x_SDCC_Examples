@@ -17,7 +17,7 @@ The examples cover various functionalities including Blink, ADC, PWM, Timer, Int
 
 ## Upload firmware to the Cocket Nova CH552 using Loadupch tool. 
 
-[Documentation](https://github.com/UNIT-Electronics/ue_loadupch_Loader_Firmware-/blob/main/pdf/latex/loadupch.pdf)
+[Documentation](https://github.com/UNIT-Electronics/CH55x_SDCC_Doc)
 
 ## Acknowledgements and Credits
 
