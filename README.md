@@ -6,20 +6,44 @@
 
 </div>
 
-This repository provides examples for developing software in C using the SDCC compiler for the CH552 microcontroller. It serves as an excellent resource for beginners and experienced developers alike, offering versatile and affordable solutions for CH552 development.
+This repository offers a collection of C language examples developed with the SDCC compiler for the CH552 microcontroller. It serves as a valuable resource for both beginners and experienced developers, providing versatile and cost-effective solutions for CH552-based projects.
 
-The CH552 microcontroller features an enhanced E8051 core MCU compatible with the MCS51 instruction set. With 79% of its instructions being single-byte single-cycle instructions, and an average instruction speed of 8 ~ 15 times faster than that of the standard MCS51, it is well-suited for low-cost projects.
+## CH552 Microcontroller Features
 
-The examples cover various functionalities including Blink, ADC, PWM, Timer, Interrupts, and bit-banging for I2C communication and controlling WS2812 LEDs.
+The CH552 microcontroller boasts an enhanced E8051 core MCU compatible with the MCS51 instruction set, featuring:
 
-**Note:** The examples are regularly updated to enhance project development.
+- **Instruction Efficiency**: 79% of its instructions are single-byte, single-cycle, achieving execution speeds approximately 8 to 15 times faster than the standard MCS51.
+- **Cost-Effectiveness**: Its optimized architecture makes it ideal for low-cost applications without compromising performance.
 
+## Included Examples
 
-## Upload firmware to the Cocket Nova CH552 using Loadupch tool. 
+This repository encompasses various functionalities, including:
 
-[Documentation](https://github.com/UNIT-Electronics/CH55x_SDCC_Doc)
+- **LED Blinking (Blink)**
+- **Analog-to-Digital Converter (ADC)**
+- **Pulse Width Modulation (PWM)**
+- **Timers**
+- **Interrupts**
+- **Bit-banging for I2C Communication**
+- **Control of WS2812 LEDs**
+
+**Note**: Examples are regularly updated to enhance project development.
+
+## Firmware Upload Instructions
+
+To upload firmware to the Cocket Nova CH552, utilize the **Loadupch** tool. Detailed instructions are available in the [Official Documentation](https://github.com/UNIT-Electronics/CH55x_SDCC_Doc).
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)** for all original work and modifications.
+
+However, portions of the code are based on [MCU Templates](https://github.com/wagiminator/MCU-Templates) by wagiminator, which are licensed under the **Creative Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0)**.
+
+For more details, see:
+- [CC BY-SA 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/)
+- [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Acknowledgements and Credits
 
 - [![Unit Electronics](https://img.shields.io/badge/Unit_Electronics-Website-blue?style=flat-square&logo=google-chrome)](https://uelectronics.com/)
-- [![Stefan Wagner](https://img.shields.io/badge/Stefan_Wagner-GitHub-black?style=flat-square&logo=github)](https://github.com/wagiminator) 
+- [![Stefan Wagner](https://img.shields.io/badge/Stefan_Wagner-GitHub-black?style=flat-square&logo=github)](https://github.com/wagiminator)
