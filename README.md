@@ -25,13 +25,17 @@ This repository encompasses various functionalities, including:
 - **Timers**
 - **Interrupts**
 - **Bit-banging for I2C Communication**
+    - **Control of SSD1306 OLED Display**
+    - **Control of MPU6050 Accelerometer**
 - **Control of WS2812 LEDs**
 
 **Note**: Examples are regularly updated to enhance project development.
 
-## Firmware Upload Instructions
+## Getting Started
 
-To upload firmware to the Cocket Nova CH552, utilize the **Loadupch** tool. Detailed instructions are available in the [Official Documentation](https://github.com/UNIT-Electronics/CH55x_SDCC_Doc).
+Manual installation of the SDCC compiler is required to compile the examples. The following steps provide a guide for setting up the SDCC compiler on Windows / GNU/Linux:
+
+- [Getting Started Guide for Cocket Nova](https://unit-electronics.github.io/CH55x_SDCC_Doc/)
 
 ## License
 
