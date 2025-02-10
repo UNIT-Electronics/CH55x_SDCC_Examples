@@ -37,12 +37,12 @@ jobs:
       working-directory: Software/examples/WS2812
       run: make all
     
-    - name: USB-serial example 1
-      working-directory: Software/examples/USB-serial/USB-Passthrough
+    - name: USB example 1
+      working-directory: Software/examples/USB/USB-Passthrough
       run: make all
 
-    - name: USB-serial  2
-      working-directory: Software/examples/USB-serial/USB-PWM
+    - name: USB  2
+      working-directory: Software/examples/USB/USB-PWM
       run: make all
 
     - name: TIMER example
