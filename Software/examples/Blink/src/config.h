@@ -14,7 +14,7 @@
 #pragma once
 
 // Pin definitions
-#define PIN_LED             P14      
+#define PIN_LED             P32      
 #define PIN_SDA             P30       // I2C SDA
 #define PIN_SCL             P32      // I2C SCL
 
@@ -25,3 +25,4 @@
 
 
 
+A2648$7dD
