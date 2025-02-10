@@ -23,6 +23,3 @@
 #define PIN_BUTTON2         P15      // button pin
 #define PIN_BUT_START       P16      // button pin
 
-
-
-A2648$7dD
